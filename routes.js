@@ -11,6 +11,8 @@ const requestHandler = ( req,res) => {
             res.write('<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>');
             res.write('</html>');
             return res.end();
+
+    
         }
        
     
@@ -35,7 +37,6 @@ const requestHandler = ( req,res) => {
             return res.end();
         });
      });
-    
     }  
         res.setHeader('Content-Type', 'text/html');
         res.write('<html>');
