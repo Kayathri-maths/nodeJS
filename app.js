@@ -23,7 +23,6 @@ app.use(shopRoutes);
 // app.use(contactRoutes);
 // app.use(successRoutes);
 
-
 app.use(errorController.get404);
 
 app.listen(3000);
