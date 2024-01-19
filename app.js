@@ -14,7 +14,6 @@ app.set('views','views');
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
-db.execute('SELECT * FROM products');
 // const contactRoutes = require('./routes/contact');
 // const successRoutes =require('./routes/success');
 
