@@ -15,10 +15,10 @@
 //req.url:
 // Contains the path and query parameters of the requested URL.
 
-// req.headers:
+//req.headers:
 // Holds information about the request, like the type of browser being used.
 
-// req.method:
+//req.method:
 // Indicates the type of request, such as GET or POST.
 
 const http=require('http');
