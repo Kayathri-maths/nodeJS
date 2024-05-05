@@ -12,7 +12,7 @@ app.set('view engine','ejs');
 app.set('views','views');
 
 const adminRoutes = require('./routes/admin');
-// const shopRoutes = require('./routes/shop');
+const shopRoutes = require('./routes/shop');
 
 // const contactRoutes = require('./routes/contact');
 // const successRoutes =require('./routes/success');
@@ -33,13 +33,12 @@ app.use((req, res, next) => {
 })
 
 app.use('/admin',adminRoutes);
-// app.use(shopRoutes);
+app.use(shopRoutes);
 // app.use(contactRoutes);
 // app.use(successRoutes);
 
 app.use(errorController.get404);
 
 mongoConnect(() => {
-    console.log('connected!')
     app.listen(3000);
 });
